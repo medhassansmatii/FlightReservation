@@ -1,0 +1,23 @@
+
+
+
+{{message}}
+{{employeeList}}
+
+
+
+
+
+<h1>Enter the reservation id:<input type="text" [(ngModel)]="reservationId"/><br/></h1>
+<button class="button" (click)='getRerData(reservationId)'>Next</button>
+
+
+{{reservationInfo.id}}
+{{reservationInfo.checkedIn}}
+{{reservationInfo.checkedIn}}
+{{reservationInfo.flight.id}}
+{{reservationInfo.flight.flightNumber}}
+{{reservationInfo.flight.operatingAirlines}}
+
+
+<router-outlet></router-outlet>

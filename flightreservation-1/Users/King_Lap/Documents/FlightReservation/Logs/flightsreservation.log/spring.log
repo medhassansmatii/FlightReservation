@@ -1,0 +1,40 @@
+2019-12-27 01:50:01.981  INFO 5304 --- [main] c.s.f.Flightreservation1Application      : Starting Flightreservation1Application on DESKTOP-9QP8CU1 with PID 5304 (D:\My-WorkSpace\flightreservation-1\target\classes started by King_Lap in D:\My-WorkSpace\flightreservation-1)
+2019-12-27 01:50:01.990  INFO 5304 --- [main] c.s.f.Flightreservation1Application      : No active profile set, falling back to default profiles: default
+2019-12-27 01:50:04.041  INFO 5304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2019-12-27 01:50:04.486  INFO 5304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 422ms. Found 4 JPA repository interfaces.
+2019-12-27 01:50:06.016  INFO 5304 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-27 01:50:06.666  INFO 5304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-27 01:50:06.688  INFO 5304 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-27 01:50:06.688  INFO 5304 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-27 01:50:07.443  INFO 5304 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-12-27 01:50:07.466  INFO 5304 --- [main] o.a.c.c.C.[.[.[/flightreservation]       : Initializing Spring embedded WebApplicationContext
+2019-12-27 01:50:07.467  INFO 5304 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5260 ms
+2019-12-27 01:50:07.858  INFO 5304 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-27 01:50:09.263  INFO 5304 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-27 01:50:09.643  INFO 5304 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-27 01:50:10.041  INFO 5304 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-27 01:50:10.474  INFO 5304 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-27 01:50:11.088  INFO 5304 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-12-27 01:50:13.734  INFO 5304 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-27 01:50:13.756  INFO 5304 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-27 01:50:15.099  WARN 5304 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-27 01:50:15.465  INFO 5304 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 01:50:15.695  INFO 5304 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2019-12-27 01:50:16.127  INFO 5304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/flightreservation'
+2019-12-27 01:50:16.133  INFO 5304 --- [main] c.s.f.Flightreservation1Application      : Started Flightreservation1Application in 15.954 seconds (JVM running for 18.88)
+2019-12-27 01:50:28.037  INFO 5304 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/flightreservation]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-27 01:50:28.038  INFO 5304 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-27 01:50:28.058  INFO 5304 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2019-12-27 01:50:28.169  INFO 5304 --- [http-nio-8080-exec-2] c.s.f.Controllers.UserController         : Inside showLoginPage() 
+2019-12-27 01:50:31.641  INFO 5304 --- [http-nio-8080-exec-3] c.s.f.Controllers.UserController         : Inside login() and the email is :hassansmatin@gmail.com
+2019-12-27 01:50:53.460  INFO 5304 --- [http-nio-8080-exec-4] c.s.f.Controllers.FlightController       : Inside findFlights() From:AUSTo:NYCDeparture Date:Fri Jan 03 00:00:00 PST 2020
+2019-12-27 01:50:53.494  INFO 5304 --- [http-nio-8080-exec-4] c.s.f.Controllers.FlightController       : flights found are:[]
+2019-12-27 01:51:02.480  INFO 5304 --- [http-nio-8080-exec-5] c.s.f.Controllers.FlightController       : Inside findFlights() From:AUSTo:NYCDeparture Date:Mon Feb 05 00:00:00 PST 2018
+2019-12-27 01:51:02.499  INFO 5304 --- [http-nio-8080-exec-5] c.s.f.Controllers.FlightController       : flights found are:[Flight [flightNumber=AA2, operatingAirLines=American Airlines, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05 00:00:00.0, estimatedDepartureTime=2018-02-05 05:14:07.0], Flight [flightNumber=AA3, operatingAirLines=American Airlines, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05 00:00:00.0, estimatedDepartureTime=2018-02-05 06:14:07.0], Flight [flightNumber=SW1, operatingAirLines=South West, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05 00:00:00.0, estimatedDepartureTime=2018-02-05 07:14:07.0]]
+2019-12-27 01:51:04.279  INFO 5304 --- [http-nio-8080-exec-6] c.s.f.Controllers.ReservationController  : Inside showCompleteReservation() and the flight id is: 3
+2019-12-27 01:51:04.280  INFO 5304 --- [http-nio-8080-exec-6] c.s.f.Controllers.ReservationController  : flight is Flight [flightNumber=AA3, operatingAirLines=American Airlines, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05 00:00:00.0, estimatedDepartureTime=2018-02-05 06:14:07.0]
+2019-12-27 01:51:40.203  INFO 5304 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-12-27 01:51:40.209  INFO 5304 --- [RMI TCP Connection(10)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-27 01:51:40.213  INFO 5304 --- [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-27 01:51:40.219  INFO 5304 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-27 01:51:40.244  INFO 5304 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

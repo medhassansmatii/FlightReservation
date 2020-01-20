@@ -1,0 +1,79 @@
+CREATE DATABASE reservation
+ USE reservation
+ 
+ CREATE TABLE user
+ (
+  ID INT NOT NULL AUTO_INCREMENT,
+  FIRST_NAME varchar (20),
+  LAST_NAME varchar (20),
+  EMAIL varchar (250),
+  PASSWORD  varchar (20),
+  PRIMARY KEY (ID),
+  UNIQUE Key (EMAIL)
+ )
+ CREATE TABLE flight
+ (
+  ID INT NOT NULL AUTO_INCREMENT, 
+  FLIGHT_NUMBER varchar (20) NOT NULL ,
+  OPERATING_AIRLINES varchar (30) NOT NULL ,
+  DEPARTURE_CITY varchar (20) NOT NULL ,
+  ARRIVAL_CITY varchar (20) NOT NULL ,
+  DATE_OF_DEPARTURE DATE NOT NULL ,
+  ESTIMATED_DEPARTURE_TIME TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (ID)
+ )
+  CREATE TABLE passenger
+  (
+    ID  INT NOT NULL AUTO_INCREMENT,
+	FIRST_NAME         varchar (250),
+	LAST_NAME          varchar (250),
+    MIDDLE_NAME        varchar (250),  
+	EMAIL              varchar (250),
+    PHONE              varchar (10),
+    PRIMARY KEY(ID)
+  )
+   CREATE TABLE reservation
+   (
+   ID  INT NOT NULL AUTO_INCREMENT,
+   CHECKED_IN TINYINT(1),
+   NUMBER_OF_BAGS INT ,
+   PASSENGER_ID INT ,
+   FLIGHT_ID INT ,
+   CREATED TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+   PRIMARY KEY (ID),
+   FOREIGN KEY (PASSENGER_ID) REFERENCES PASSENGER(ID) ON DELETE CASCADE,
+   FOREIGN KEY (FLIGHT_ID) REFERENCES FLIGHT(ID)
+   )
+   
+   CREATE TABLE ROLE
+   (
+   ID INT NOT NULL AUTO_INCREMENT,
+   NAME VARCHAR(20),
+   PRIMARY KEY (ID)
+   )
+   CREATE TABLE USER_ROLE
+   (
+   user_id int,
+   role_id int,
+   FOREIGN key (user_id),
+   REFERENCES user(id),
+   
+   
+   )
+   
+   
+   
+   
+   
+   SELECT * FROM user
+   SELECT * FROM passenger
+   SELECT * FROM flight
+   SELECT * FROM reservation
+   
+   
+   
+   DROP TABLE user
+   DROP TABLE passenger
+   DROP TABLE flight
+   DROP TABLE reservation
+   DROP DATABASE reservation
